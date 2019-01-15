@@ -7,8 +7,9 @@
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        $('html, body, div').animate({
-          scrollLeft: (target.offset().left - 500)
+        // console.log(target.offset().left)
+        target.parent().parent().animate({
+          scrollLeft: (target[0].offsetLeft)
         }, 1000, "easeInOutExpo");
         return false;
       }
