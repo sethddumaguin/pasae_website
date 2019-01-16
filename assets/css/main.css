@@ -11,6 +11,8 @@
 /* Reset */
 
 
+
+
 .testimonial-group > .row {
   /*overflow-x: auto;*/
   /*white-space: nowrap;*/
@@ -49,10 +51,18 @@
 		quotes: none;
 	}
 
-	blockquote:before, blockquote:after, q:before, q:after {
+	blockquote p:before {
+		content: "\f10d";
+	    font-family: 'Fontawesome';
+	    float: left;
+	    margin-right: 10px;
+	}
+
+	/*blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
 		content: none;
-	}
+	}*/
+
 
 	table {
 		border-collapse: collapse;

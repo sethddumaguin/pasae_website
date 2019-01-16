@@ -1,3 +1,11 @@
+$(document).ready(function() {
+  //Set the carousel options
+  $('#quote-carousel').carousel({
+    pauseOnHover: true,
+    interval: 2000,
+  });
+    });
+
 (function($) {
   "use strict"; // Start of use strict
 

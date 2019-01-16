@@ -169,7 +169,7 @@
 				    </div>
 
 				    <div id="treasurer" class="collapse" aria-labelledby="treasurer1" data-parent="#accordion">
-				    	<div class="card-body" >
+				    	<div class="card-body">
 				    		            <span class="fa-stack fa-3x">
 							            	<i class="fa fa-money"></i>
 							            </span>
@@ -437,18 +437,7 @@
         		<h1 class="service-heading">Intern Experience </h1>
         		<h3 class="section-subheading text-muted"> If you're still hesitant about joining, check out what some of our past interns had to say about PASAE.</h3>
         	</div>
-        	<!-- <div class="banner half">
-        		<article style="position: 500px">
-					<img src="images/pasae_front.jpg" alt=""  />
-					<div class="inner">
-						<header>
-							<p>Pilipino Association of Scientists, Architects, and Engineers</p>
-							<h2>PASAE </h2>
-						</header>
-					</div>
-				</article>
-        	</div> -->
-        	<div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
+        	<!-- <div id="carouselExampleIndicators" class="carousel slide container" data-ride="carousel">
 				  <ol class="carousel-indicators">
 				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -506,10 +495,84 @@
 				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 				    <span class="sr-only">Next</span>
 				  </a>
-			</div>
+			</div> -->
         </div>
+        <div class="container">
+		    <div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+			    <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		  		</ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			    	<blockquote style="border-left: none">
+			    		<div class="row">
+			    			<div class="col-sm-3 text-center">
+			    				<img class="rounded-circle" src="img/intern/justin_wide.jpg" width="150px" height="150px">
+			    			</div>		
+			    			<div class="col-sm-9">
+			    				<p style="color: #000"> The people I have met in PASAE have given me a lot of unconditional love and support - emotionally, academically, and professionally. </p>
+			    				<p class="blockquote-footer" style="color: #000">Justine Puerto, Bionengineering 2020</p>
+			    			</div>    			
+			    		</div>
+			    	</blockquote>
+			    </div>
+			    <div class="carousel-item">
+			      <blockquote style="border-left: none">
+			    		<div class="row">
+			    			<div class="col-sm-3 text-center">
+			    				<img class="rounded-circle" src="img/intern/jezel_wide.jpg" width="150px" height="150px">
+			    			</div>		
+			    			<div class="col-sm-9">
+			    				<p style="color: #000"> I decided to join PASAE after hearing about it at Senior Weekend and to find a support group for STEM majors. </p>
+			    				<p class="blockquote-footer" style="color: #000">Jezel Poliran, Cognitive Science 2020</p>
+			    			</div>    			
+			    		</div>
+			    	</blockquote>
+			    </div>
+			    <div class="carousel-item">
+			      <blockquote style="border-left: none">
+			    		<div class="row">
+			    			<div class="col-sm-3 text-center">
+			    				<img class="rounded-circle" src="img/intern/nikka_wide.jpg" width="150px" height="150px">
+			    			</div>		
+			    			<div class="col-sm-9">
+			    				<p style="color: #000"> I joined PASAE because I wanted to be around fun, great, inspiring, like-minded people </p>
+			    				<p class="blockquote-footer" style="color: #000">Nikka Sandoval, Genetics and Plant Biology 2021</p>
+			    			</div>    			
+			    		</div>
+			    	</blockquote>
+			    </div>
+			    <div class="carousel-item">
+			      <blockquote style="border-left: none">
+			    		<div class="row">
+			    			<div class="col-sm-3 text-center">
+			    				<img class="rounded-circle" src="img/intern/travis_wide.jpg" width="150px" height="150px">
+			    			</div>		
+			    			<div class="col-sm-9">
+			    				<p style="color: #000"> I joined PASAE because I wanted to be part of a Pilipinx Community which I could rely on for support and guidance, be involved in professional events, and build meaningful relationships during my time in Berkeley. </p>
+			    				<p class="blockquote-footer" style="color: #000">Travis Reyes, Computer Science 2022</p>
+			    			</div>    			
+			    		</div>
+			    	</blockquote>
+			    </div>
+			  </div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="left: -50px">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+	  			</a>
+  				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="right: -50px !important;">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+ 				</a>
+			</div>
+		</div>
       </div>
     </section>
+
+
 
 
     <section id="general member" class="wrapper style2">
@@ -570,8 +633,19 @@
             </div>
         </div>
 </footer>
-
+	
 		<!-- Scripts -->
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+			<script>
+				$(document).ready(function() {
+  //Set the carousel options
+			  $('#quote-carousel').carousel({
+			    pauseOnHover: true,
+			    interval: 2000,
+			  });
+			    });
+			</script> -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
