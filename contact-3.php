@@ -11,12 +11,12 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'sethddumaguin@pasae.berkeley.edu';
-$fromName = 'Demo contact form';
+$fromEmail = 'noreply@pasae.berkeley.edu';
+$fromName = 'PASAE Website Contact Form';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'sethddumaguin@gmail.com';
-$sendToName = 'Demo contact form';
+$sendToEmail = 'general@pasae.berkeley.edu';
+$sendToName = 'PASAE General';
 
 // subject of the email
 $subject = 'New message from contact form';
@@ -24,8 +24,8 @@ $subject = 'New message from contact form';
 // smtp credentials and server
 
 $smtpHost = 'smtp.ocf.berkeley.edu';
-$smtpUsername = 'sethddumaguin@pasae.berkeley.edu';
-$smtpPassword = '@Pingig12';
+$smtpUsername = 'noreply@pasae.berkeley.edu';
+$smtpPassword = 'pingig12';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -59,7 +59,7 @@ try {
         }
     }
     $emailTextHtml .= "</table><hr>";
-    $emailTextHtml .= "<p>Have a nice day,<br>Best,<br>Ondrej</p>";
+    $emailTextHtml .= "<p>Best,<br>Seth Dumaguin <br> PASAE 31 Webmaster</p>";
     
     $mail = new PHPMailer;
     
@@ -80,26 +80,26 @@ try {
     // 0 = off (for production use)
     // 1 = client messages
     // 2 = client and server messages
-    $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 0;
     $mail->Debugoutput = 'html';
     
     //Set the hostname of the mail server
     // use
     // $mail->Host = gethostbyname('smtp.gmail.com');
     // if your network does not support SMTP over IPv6
-    $mail->Host = gethostbyname($smtpHost);
+    $mail->Host = $smtpHost;
     
     //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
     $mail->Port = 587;
     
     //Set the encryption system to use - ssl (deprecated) or tls
-    $mail->SMTPSecure = '';
+    $mail->SMTPSecure = 'tls';
     
     //Whether to use SMTP authentication
     $mail->SMTPAuth = true;
     
     //Username to use for SMTP authentication - use full email address for gmail
-    $mail->Username = $smtpHost;
+    $mail->Username = $smtpUsername;
     
     //Password to use for SMTP authentication
     $mail->Password = $smtpPassword;
