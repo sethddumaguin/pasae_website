@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "PASAE Members Only"
+AuthUserFile /services/http/users/p/pasae/priv/.htmyxyz
+require valid-user
