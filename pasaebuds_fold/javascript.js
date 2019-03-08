@@ -1,5 +1,5 @@
 function load() {
-	var myData = data;
+	var myData = roundTwo;
 	var input = document.getElementById("myText").value;
 	var original = input;
 	input = input.toLowerCase();
@@ -8,7 +8,7 @@ function load() {
 		alert('Please put your name :)')
 	}
 	var give = true;
-	if (input == 'sorry seth') {
+	if (input == 'let me in pasae seth') {
 		input = 'Travis Reyes'
 		give = false;
 	}
@@ -31,7 +31,8 @@ function load() {
 	}
 
 	if ('travis'.includes(name[0]) && give) {
-		alert('Hello Travis. I remember you making fun of the website. No PASAEBud for you. If you want your PASAEBud type in Sorry Seth');
+		alert("Hello Travis. Your name is not on our record. It looks like you're not a member of PASAE. Please try again next semester.");
+		alert("JK. Type: 'Let me in PASAE Seth' ");
 		return;
 	}
 
