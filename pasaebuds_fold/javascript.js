@@ -8,11 +8,8 @@ function load() {
 		alert('Please put your name :)')
 	}
 	var give = true;
-<<<<<<< HEAD
-	if (input == 'let me in pasae seth') {
-=======
 	if (input == 'Let me in PASAE Seth') {
->>>>>>> 39682614624bc0e57e9cc8b6e21ef560bdf00ad2
+
 		input = 'Travis Reyes'
 		give = false;
 	}
