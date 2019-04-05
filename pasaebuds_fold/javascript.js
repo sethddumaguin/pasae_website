@@ -1,5 +1,5 @@
 function load() {
-	var myData = roundTwo;
+	var myData = data;
 	var input = document.getElementById("myText").value;
 	var original = input;
 	input = input.toLowerCase();
@@ -7,12 +7,12 @@ function load() {
 	if (input == '' || input == " ") {
 		alert('Please put your name :)')
 	}
-	var give = true;
-	if (input == 'Let me in PASAE Seth') {
+	// var give = true;
+	// if (input == 'Let me in PASAE Seth') {
 
-		input = 'Travis Reyes'
-		give = false;
-	}
+	// 	input = 'Travis Reyes'
+	// 	give = false;
+	// }
 
 	input = input.toLowerCase();
 
@@ -31,11 +31,11 @@ function load() {
 		return;
 	}
 
-	if ('travis'.includes(name[0]) && give) {
-		alert("Hello Travis. Your name is not on our record. It looks like you're not a member of PASAE. Please try again next semester.");
-		alert("JK. Type: 'Let me in PASAE Seth' ");
-		return;
-	}
+	// if ('travis'.includes(name[0]) && give) {
+	// 	alert("Hello Travis. Your name is not on our record. It looks like you're not a member of PASAE. Please try again next semester.");
+	// 	alert("JK. Type: 'Let me in PASAE Seth' ");
+	// 	return;
+	// }
 
 	if (pairs.length == 1) {
 		if ((name.length == 1) && (pairs[0].First.split(" ")[0] == pairs[0].Second.split(" ")[0])) {
